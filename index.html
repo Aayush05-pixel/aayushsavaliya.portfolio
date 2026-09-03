@@ -1,0 +1,573 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Aayush Savaliya | Portfolio</title>
+    <meta
+      name="description"
+      content="Portfolio of Aayush Savaliya — B.Tech CSE student at SRM, software developer, open source contributor, and problem solver."
+    />
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Outfit:wght@400;500;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Canvas for Particle Background -->
+    <canvas id="particle-canvas"></canvas>
+
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+      <div class="nav-container">
+        <a href="#home" class="logo">AS<span>.</span></a>
+        <div class="nav-links" id="nav-links">
+          <a href="#home" class="nav-link active">Home</a>
+          <a href="#about" class="nav-link">About</a>
+          <a href="#skills" class="nav-link">Skills</a>
+          <a href="#projects" class="nav-link">Projects</a>
+          <a href="#education" class="nav-link">Education </a>
+          <a href="#contact" class="nav-link">Contact</a>
+        </div>
+        <div class="hamburger" id="hamburger">
+          <i class="fas fa-bars"></i>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+      <div class="container hero-content">
+        <div class="hero-text reveal">
+          <p class="greeting">Hello, I'm</p>
+          <h1 class="name">Aayush Savaliya</h1>
+          <h2 class="title">
+            I'm a <span id="typewriter" class="cyan-text"></span
+            ><span class="cursor">|</span>
+          </h2>
+          <p class="description">
+            A passionate Computer Science Engineering student highly interested
+            in Software Development, Problem Solving, and Emerging technologies.
+            My goal is to apply my knowledge in practical environments through
+            internships, projects, vibe coding and collaborative learning.
+          </p>
+          <div class="hero-actions">
+            <a href="#contact" class="btn btn-primary">Contact Me</a>
+            <a href="#" class="btn btn-outline"
+              >Download Resume <i class="fas fa-download"></i
+            ></a>
+          </div>
+          <div class="social-links">
+            <a href="https://github.com/Aayush05-pixel/" target="_blank"
+              ><i class="fab fa-github"></i
+            ></a>
+            <a
+              href="https://www.linkedin.com/in/aayush-savaliya05"
+              target="_blank"
+              ><i class="fab fa-linkedin-in"></i
+            ></a>
+            <a href="mailto:aayushsavaliya72@gmail.com"
+              ><i class="fas fa-envelope"></i
+            ></a>
+          </div>
+        </div>
+        <div class="hero-graphic reveal fade-right">
+          <div class="abstract-shape">
+            <div class="glow-orb"></div>
+            <div class="glass-card main-card">
+              <div class="code-snippet">
+                <span class="keyword">const</span>
+                <span class="variable">developer</span> = {<br />
+                &nbsp;&nbsp;<span class="property">name</span>:
+                <span class="string">"Aayush"</span>,<br />
+                &nbsp;&nbsp;<span class="property">role</span>:
+                <span class="string">"Software Engineer"</span>,<br />
+                &nbsp;&nbsp;<span class="property">passion</span>: [<span
+                  class="string"
+                  >"Code"</span
+                >, <span class="string">"Create"</span>]<br />
+                };
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about section-alt">
+      <div class="container">
+        <div class="section-header reveal">
+          <h2 class="section-title">About <span>Me</span></h2>
+          <div class="underline"></div>
+        </div>
+        <div class="about-content">
+          <div class="about-text reveal fade-left">
+            <h3>Pre-final Year B.Tech CSE at SRM Institute of Science and Technology</h3>
+            <p>
+              I'm a driven Computer Science Engineering student at
+              <strong class="cyan-text">SRM Institute of Science and Technology</strong>, maintaining a
+              <strong class="cyan-text">CGPA of 9.83/10</strong>. I thrive at the intersection of systems programming, open source, and problem solving. From building compiler backends to contributing to the open source ecosystem, I enjoy diving deep into complex technical challenges and turning ideas into impactful software.
+            </p>
+            <div class="info-list">
+              <div class="info-item">
+                <span class="info-label">CGPA:</span>
+                <span class="info-value"><strong>9.83 / 10</strong></span>
+              </div>
+              <div class="info-item">
+                <span class="info-label">Email:</span>
+                <span class="info-value">aayushsavaliya72@gmail.com</span>
+              </div>
+              <div class="info-item">
+                <span class="info-label">Phone:</span>
+                <span class="info-value">7016021700</span>
+              </div>
+            </div>
+          </div>
+          <div class="about-drives reveal fade-right">
+            <div class="drives-card glass-effect">
+              <h3><i class="fas fa-bolt cyan-text"></i> What Drives Me</h3>
+              <div class="drives-list">
+                <div class="drive-item">
+                  <div class="drive-icon"><i class="fas fa-microchip"></i></div>
+                  <div>
+                    <h4>Systems & Low-Level Programming</h4>
+                    <p>Fascinated by compilers, operating systems, and how software meets hardware.</p>
+                  </div>
+                </div>
+                <div class="drive-item">
+                  <div class="drive-icon"><i class="fas fa-code-branch"></i></div>
+                  <div>
+                    <h4>Open Source</h4>
+                    <p>Believer in building in the open — contributing code that empowers communities.</p>
+                  </div>
+                </div>
+                <div class="drive-item">
+                  <div class="drive-icon"><i class="fas fa-puzzle-piece"></i></div>
+                  <div>
+                    <h4>Problem Solving</h4>
+                    <p>Love breaking down complex problems into elegant, efficient solutions.</p>
+                  </div>
+                </div>
+                <div class="drive-item">
+                  <div class="drive-icon"><i class="fas fa-rocket"></i></div>
+                  <div>
+                    <h4>Continuous Learning</h4>
+                    <p>Always exploring new technologies, frameworks, and paradigms to stay ahead.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
+      <div class="container">
+        <div class="section-header reveal">
+          <h2 class="section-title">My <span>Skills</span></h2>
+          <div class="underline"></div>
+        </div>
+        <div class="skills-categories reveal">
+          <!-- Languages -->
+          <div class="skill-category glass-effect">
+            <div class="skill-category-header">
+              <i class="fas fa-code"></i>
+              <h3>Languages</h3>
+            </div>
+            <div class="skill-blocks">
+              <span class="skill-block">C++</span>
+              <span class="skill-block">Java</span>
+              <span class="skill-block">Python</span>
+            </div>
+          </div>
+          <!-- Web Development -->
+          <div class="skill-category glass-effect">
+            <div class="skill-category-header">
+              <i class="fas fa-globe"></i>
+              <h3>Web Development</h3>
+            </div>
+            <div class="skill-blocks">
+              <span class="skill-block">HTML</span>
+              <span class="skill-block">CSS</span>
+              <span class="skill-block">JavaScript</span>
+            </div>
+          </div>
+          <!-- Core CS -->
+          <div class="skill-category glass-effect">
+            <div class="skill-category-header">
+              <i class="fas fa-laptop-code"></i>
+              <h3>Core CS</h3>
+            </div>
+            <div class="skill-blocks">
+              <span class="skill-block">Data Structures & Algorithms</span>
+              <span class="skill-block">Object-Oriented Programming</span>
+              <span class="skill-block">Operating Systems</span>
+              <span class="skill-block">DBMS</span>
+            </div>
+          </div>
+          <!-- Tools & Platforms -->
+          <div class="skill-category glass-effect">
+            <div class="skill-category-header">
+              <i class="fas fa-tools"></i>
+              <h3>Tools & Platforms</h3>
+            </div>
+            <div class="skill-blocks">
+              <span class="skill-block">Git</span>
+              <span class="skill-block">GitHub</span>
+              <span class="skill-block">VS Code</span>
+              <span class="skill-block">Vercel</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects section-alt">
+      <div class="container">
+        <div class="section-header reveal">
+          <h2 class="section-title">Featured <span>Projects</span></h2>
+          <div class="underline"></div>
+        </div>
+        <div class="projects-grid">
+          <div class="project-card glass-effect reveal">
+            <div class="project-content">
+              <div class="project-icon"><i class="fas fa-database"></i></div>
+              <h3 class="project-title">Vector DB</h3>
+              <p class="project-desc">
+                A high-performance vector database for storing, indexing, and
+                querying high-dimensional vector embeddings — enabling fast
+                similarity search for AI/ML applications.
+              </p>
+              <div class="project-tags">
+                <span class="tag">Python</span>
+                <span class="tag">Vector Search</span>
+                <span class="tag">AI/ML</span>
+              </div>
+              <div class="project-links">
+                <a
+                  href="https://github.com/Aayush05-pixel/VectorDB"
+                  target="_blank"
+                  class="project-link-btn"
+                  ><i class="fab fa-github"></i> View on GitHub</a
+                >
+              </div>
+            </div>
+          </div>
+          <div
+            class="project-card glass-effect reveal"
+            style="transition-delay: 0.1s"
+          >
+            <div class="project-content">
+              <div class="project-icon"><i class="fas fa-shield-alt"></i></div>
+              <h3 class="project-title">Trace Guard</h3>
+              <p class="project-desc">
+                A security-focused tracing and monitoring tool that provides
+                real-time threat detection, audit logging, and system integrity
+                verification.
+              </p>
+              <div class="project-tags">
+                <span class="tag">Security</span>
+                <span class="tag">Monitoring</span>
+                <span class="tag">Python</span>
+              </div>
+              <div class="project-links">
+                <a
+                  href="https://github.com/Aayush05-pixel/Traceguard"
+                  target="_blank"
+                  class="project-link-btn"
+                  ><i class="fab fa-github"></i> View on GitHub</a
+                >
+              </div>
+            </div>
+          </div>
+          <div
+            class="project-card glass-effect reveal"
+            style="transition-delay: 0.2s"
+          >
+            <div class="project-content">
+              <div class="project-icon"><i class="fas fa-microchip"></i></div>
+              <h3 class="project-title">Compiler Backend Emulator</h3>
+              <p class="project-desc">
+                Takes Intermediate Representation (IR) and lowers it into
+                Machine code. Emulates instruction selection, register
+                allocation, and code generation phases.
+              </p>
+              <div class="project-tags">
+                <span class="tag">C++</span>
+                <span class="tag">Compilers</span>
+                <span class="tag">Systems Programming</span>
+              </div>
+              <div class="project-links">
+                <a
+                  href="https://github.com/Aayush05-pixel/Compiler-Backend_Emulator"
+                  target="_blank"
+                  class="project-link-btn"
+                  ><i class="fab fa-github"></i> View on GitHub</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Education & Achievements Section -->
+    <section id="education" class="timeline-section">
+      <div class="container">
+        <div class="section-header reveal">
+          <h2 class="section-title">Education & <span>Achievements</span></h2>
+          <div class="underline"></div>
+        </div>
+        <div class="timeline-wrapper">
+          <!-- Left Column: Education + Certifications -->
+          <div class="timeline-column reveal fade-left">
+            <div class="section-header-small">
+              <h3><i class="fas fa-graduation-cap"></i> Education</h3>
+            </div>
+            <div class="education-card glass-effect">
+              <div class="edu-badge">
+                <i class="fas fa-university"></i>
+              </div>
+              <div class="edu-info">
+                <h4>B.Tech in Computer Science & Engineering</h4>
+                <span class="company cyan-text"
+                  >SRM Institute of Science and Technology</span
+                >
+                <span class="date">2024 – 2028</span>
+                <div class="cgpa-badge">
+                  <i class="fas fa-star"></i> CGPA: <strong>9.83 / 10</strong>
+                </div>
+              </div>
+            </div>
+
+            <div class="section-header-small" style="margin-top: 3rem">
+              <h3><i class="fas fa-certificate"></i> Certifications</h3>
+            </div>
+            <div class="cert-list">
+              <div class="cert-item glass-effect">
+                <div class="cert-item-icon"><i class="fas fa-robot"></i></div>
+                <div class="cert-item-info">
+                  <h4>IBM Getting Started with AI</h4>
+                  <a
+                    href="certificates/IBM gettting started with artificial intelligence.pdf"
+                    target="_blank"
+                    class="view-cert-btn"
+                    ><i class="fas fa-eye"></i> View</a
+                  >
+                </div>
+              </div>
+              <div class="cert-item glass-effect">
+                <div class="cert-item-icon"><i class="fas fa-cloud"></i></div>
+                <div class="cert-item-info">
+                  <h4>Oracle Cloud Infrastructure</h4>
+                  <a
+                    href="certificates/Oracle-Cloud-Infrastructure.pdf"
+                    target="_blank"
+                    class="view-cert-btn"
+                    ><i class="fas fa-eye"></i> View</a
+                  >
+                </div>
+              </div>
+              <div class="cert-item glass-effect">
+                <div class="cert-item-icon">
+                  <i class="fas fa-chart-bar"></i>
+                </div>
+                <div class="cert-item-info">
+                  <h4>Data Science for Engineers</h4>
+                  <a
+                    href="certificates/Data Science for Engineers.pdf"
+                    target="_blank"
+                    class="view-cert-btn"
+                    ><i class="fas fa-eye"></i> View</a
+                  >
+                </div>
+              </div>
+              <div class="cert-item glass-effect">
+                <div class="cert-item-icon"><i class="fas fa-code"></i></div>
+                <div class="cert-item-info">
+                  <h4>Programming with C++</h4>
+                  <a
+                    href="certificates/programming-with-cpp.pdf"
+                    target="_blank"
+                    class="view-cert-btn"
+                    ><i class="fas fa-eye"></i> View</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Right Column: Internships + Achievements -->
+          <div class="timeline-column reveal fade-right">
+            <div class="section-header-small">
+              <h3><i class="fas fa-briefcase"></i> Internships</h3>
+            </div>
+            <div class="timeline">
+              <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-content glass-effect">
+                  <h4>Software Engineering Job Simulation</h4>
+                  <span class="company cyan-text">JP Morgan</span>
+                  <span class="date">Jan 2026</span>
+                  <a
+                    href="certificates/JP MORGAN SOFTWARE ENGINEERING.pdf"
+                    target="_blank"
+                    class="view-cert-btn"
+                    ><i class="fas fa-eye"></i> View Certificate</a
+                  >
+                </div>
+              </div>
+              <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-content glass-effect">
+                  <h4>Android Developer Virtual Internship</h4>
+                  <span class="company cyan-text">Google</span>
+                  <span class="date">July 2025 - Sep 2025</span>
+                  <a
+                    href="certificates/Google android developer.pdf"
+                    target="_blank"
+                    class="view-cert-btn"
+                    ><i class="fas fa-eye"></i> View Certificate</a
+                  >
+                </div>
+              </div>
+            </div>
+
+            <div class="section-header-small" style="margin-top: 3rem">
+              <h3><i class="fas fa-trophy"></i> Achievements</h3>
+            </div>
+            <div class="achievements-list">
+              <div class="achievement-card glass-effect">
+                <i class="fas fa-trophy cyan-text"></i>
+                <div>
+                  <h4>Smart India Hackathon 2025 & 2026</h4>
+                  <p>Participant — Competed for two consecutive years at the national level hackathon organized by the Government of India</p>
+                </div>
+              </div>
+              <div class="achievement-card glass-effect">
+                <i class="fas fa-code-branch cyan-text"></i>
+                <div>
+                  <h4>Open Source Connect India 2026</h4>
+                  <span class="achievement-date"><i class="fas fa-calendar-alt"></i> Sep 1 – Sep 30, 2026</span>
+                  <p>Active open source contributor participating in Open Source Connect India — a nationwide initiative to promote open source culture</p>
+                </div>
+              </div>
+              <div class="achievement-card glass-effect">
+                <i class="fas fa-users cyan-text"></i>
+                <div class="achievement-card-body">
+                  <div>
+                    <h4>Hack Devengers</h4>
+                    <p>Certificate holder — Participated in the Hack Devengers hackathon event</p>
+                  </div>
+                  <a href="certificates/Hack Devengers Certificate.pdf" target="_blank" class="view-cert-btn view-cert-side">
+                    <i class="fas fa-eye"></i> View</a>
+                </div>
+              </div>
+            </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+      <div class="container">
+        <div class="section-header reveal">
+          <h2 class="section-title">Get In <span>Touch</span></h2>
+          <div class="underline"></div>
+        </div>
+        <div class="contact-content reveal">
+          <div class="contact-info">
+            <div class="contact-item glass-effect">
+              <div class="icon-box">
+                <i class="fas fa-envelope"></i>
+              </div>
+              <div class="info-details">
+                <h3>Email Me</h3>
+                <p>aayushsavaliya72@gmail.com</p>
+              </div>
+            </div>
+            <div class="contact-item glass-effect">
+              <div class="icon-box">
+                <i class="fas fa-phone-alt"></i>
+              </div>
+              <div class="info-details">
+                <h3>Call Me</h3>
+                <p>7016021700</p>
+              </div>
+            </div>
+            <div class="contact-item glass-effect">
+              <div class="icon-box">
+                <i class="fas fa-map-marker-alt"></i>
+              </div>
+              <div class="info-details">
+                <h3>Location</h3>
+                <p>Tiruchirappalli, India</p>
+              </div>
+            </div>
+          </div>
+          <div class="contact-form glass-effect">
+            <form>
+              <div class="form-group">
+                <input type="text" placeholder="Your Name" required />
+              </div>
+              <div class="form-group">
+                <input type="email" placeholder="Your Email" required />
+              </div>
+              <div class="form-group">
+                <textarea
+                  placeholder="Your Message"
+                  rows="5"
+                  required
+                ></textarea>
+              </div>
+              <button type="submit" class="btn btn-primary w-100">
+                Send Message <i class="fas fa-paper-plane"></i>
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-logo">AS<span>.</span></div>
+          <div class="footer-social">
+            <a href="https://github.com/Aayush05-pixel/" target="_blank"
+              ><i class="fab fa-github"></i
+            ></a>
+            <a
+              href="https://www.linkedin.com/in/aayush-savaliya05"
+              target="_blank"
+              ><i class="fab fa-linkedin-in"></i
+            ></a>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p>&copy; 2026 Aayush Savaliya. All Rights Reserved.</p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Custom JS -->
+    <script src="script.js"></script>
+  </body>
+</html>
